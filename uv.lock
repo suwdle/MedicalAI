@@ -141,11 +141,15 @@ name = "medicalai"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "tqdm" },
     { name = "transformers" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "transformers", specifier = ">=4.57.1" }]
+requires-dist = [
+    { name = "tqdm", specifier = ">=4.67.1" },
+    { name = "transformers", specifier = ">=4.57.1" },
+]
 
 [[package]]
 name = "numpy"
